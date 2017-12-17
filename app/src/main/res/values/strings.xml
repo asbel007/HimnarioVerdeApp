@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Himnario-Verde-App</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configuracion</string>
+    <string name="developers_team">Nas-Dix</string>
+    <string name="developers_email">dreik.elm.mec@gmail.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="txtFragmentAbout">ndfsakfkndksnf
+        fdf
+    </string>
+</resources>
