@@ -11,6 +11,13 @@ class HimnoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_himno)
 
+        //se coloca ? para evitar que null se haga presente
+        val bundle: Bundle? = intent.extras
+        val titulo=bundle?.getString("titulo")
+        val descripcion=bundle?.getString("descripcion")
+        textViewTitulo.text = titulo
+        textViewDescripcion.text = descripcion
+
         btn1?.setOnClickListener({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

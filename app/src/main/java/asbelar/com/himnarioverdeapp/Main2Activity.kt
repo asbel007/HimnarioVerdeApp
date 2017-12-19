@@ -58,6 +58,14 @@ class Main2Activity(
             miVista.textViewTitulo.text = himno.titulo!!
             miVista.textViewDescripcion.text = himno.descripcion!!
 
+            miVista.imageViewLogo.setOnClickListener{
+
+                val intent = Intent(contexto, HimnoActivity::class.java)
+                //no olvides los !! para las escepciones de null
+                intent.putExtra("titulo",himno.titulo!!)
+                intent.putExtra("descripcion",himno.descripcion!!)
+            }
+
             //retornara un item de la listView
             return miVista
 
